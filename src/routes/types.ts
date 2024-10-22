@@ -9,7 +9,6 @@ enum Pages {
   Page2,
   Page3,
   Page4,
-  Jotform,
   Wrike,
   NotFound,
 }
