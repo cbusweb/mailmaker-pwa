@@ -3,7 +3,7 @@
   "version": "2.3.0",
   "type": "module",
   "description": "Starter kit for modern web applications",
-  "homepage": "https://react-pwa.surenatoyan.com/",
+  "homepage": "https://cbusweb.github.io/mailmaker-pwa/",
   "repository": {
     "type": "git",
     "url": "https://github.com/suren-atoyan/react-pwa.git"
@@ -24,7 +24,9 @@
     "ts:check": "tsc --noEmit",
     "test:unit": "vitest",
     "test:e2e": "playwright test",
-    "test:e2e:ui": "playwright test --ui"
+    "test:e2e:ui": "playwright test --ui",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -58,6 +60,7 @@
     "eslint": "^8.55.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.2.0",
     "https-localhost": "^4.7.1",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
