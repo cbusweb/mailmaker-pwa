@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<script src="https://js.jotform.com/JotForm.js"></script>
+<script>
+  JF.login(
+    function success(){
+      JF.getFormSubmissions('242879096274067', { filter: { 'workflowStatus:eq':'Approve'}}, function(response){
+        document.write('<pre>' + JSON.stringify(response, null, '\t') + '</pre>')
+      });
+    },
+    function error(){
+      window.alert("Could not authorize user");
+    }
+  );
+</script>
+</body>
+</html>

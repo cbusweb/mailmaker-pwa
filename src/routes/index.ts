@@ -39,6 +39,18 @@ const routes: Routes = {
     title: 'Page 4',
     icon: BugReportIcon,
   },
+  [Pages.Jotform]: {
+    component: asyncComponentLoader(() => import('@/pages/Jotform')),
+    path: '/jotform',
+    title: 'Jotform',
+    icon: BugReportIcon,
+  },
+  [Pages.Wrike]: {
+    component: asyncComponentLoader(() => import('@/pages/Wrike')),
+    path: '/wrike',
+    title: 'Wrike',
+    icon: BugReportIcon,
+  },
   [Pages.NotFound]: {
     component: asyncComponentLoader(() => import('@/pages/NotFound')),
     path: '*',
