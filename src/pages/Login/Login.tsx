@@ -6,12 +6,12 @@ import Typography from '@mui/material/Typography';
 import Meta from '@/components/Meta';
 import { FullSizeCenteredFlexBox } from '@/components/styled';
 
-function Page4() {
+function Login() {
   return (
     <>
-      <Meta title="page 4" />
+      <Meta title="Wrike Integration" />
       <FullSizeCenteredFlexBox flexDirection="column">
-        <Typography variant="h3">Page 4</Typography>
+        <Typography variant="h3">Login</Typography>
         <Button
           to={`/${Math.random().toString()}`}
           component={Link}
@@ -20,11 +20,11 @@ function Page4() {
           size="small"
           color="warning"
         >
-          Whant to check 404?
+          Want to check 404?
         </Button>
       </FullSizeCenteredFlexBox>
     </>
   );
 }
 
-export default Page4;
+export default Login;

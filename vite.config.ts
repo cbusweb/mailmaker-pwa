@@ -8,7 +8,7 @@ import manifest from './manifest.json';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'mailmaker-pwa',
+  base: '/mailmaker-pwa',
   plugins: [
     react(),
     VitePWA({

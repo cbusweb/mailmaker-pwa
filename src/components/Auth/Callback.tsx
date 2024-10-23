@@ -1,6 +1,6 @@
 import type { AuthProps } from './types';
 
-function Auth({ clientId = '' }: AuthProps) {
+function Callback({ clientId = '' }: AuthProps) {
   const params = new URLSearchParams({
     client_id: clientId,
     response_type: 'code',
@@ -12,4 +12,4 @@ function Auth({ clientId = '' }: AuthProps) {
   return <a href={authorizationUri}>Login to Wrike</a>;
 }
 
-export default Auth;
+export default Callback;

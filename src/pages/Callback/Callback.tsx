@@ -4,15 +4,14 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 import Meta from '@/components/Meta';
-import Auth from '@/components/Auth';
 import { FullSizeCenteredFlexBox } from '@/components/styled';
 
-function Wrike() {
+function Callback() {
   return (
     <>
       <Meta title="Wrike Integration" />
       <FullSizeCenteredFlexBox flexDirection="column">
-        <Typography variant="h3">Wrike</Typography>
+        <Typography variant="h3">Callback</Typography>
         <Button
           to={`/${Math.random().toString()}`}
           component={Link}
@@ -21,16 +20,11 @@ function Wrike() {
           size="small"
           color="warning"
         >
-          Whant to check 404?
+          Want to check 404?
         </Button>
-        <Auth
-          clientId="66xWfMQn"
-          clientSecret="8hy0TNsOuYPU1Ez9rY98aTU6WvunKjTrxzmjHmFPLZMloN5fsFGO3vx761xZrDPv"
-          scopes="readonly"
-        />
       </FullSizeCenteredFlexBox>
     </>
   );
 }
 
-export default Wrike;
+export default Callback;

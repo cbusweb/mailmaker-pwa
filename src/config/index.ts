@@ -52,6 +52,13 @@ const defaultMetaTags = {
 };
 const giphy404 = 'https://giphy.com/embed/xTiN0L7EW5trfOvEk0';
 
+const wrike = {
+  clientId: '66xWfMQn',
+  clientSecret: '8hy0TNsOuYPU1Ez9rY98aTU6WvunKjTrxzmjHmFPLZMloN5fsFGO3vx761xZrDPv',
+  scopes: 'readonly',
+  callback: '',
+};
+
 export {
   loader,
   notifications,
@@ -62,4 +69,5 @@ export {
   title,
   defaultMetaTags,
   giphy404,
+  wrike,
 };
